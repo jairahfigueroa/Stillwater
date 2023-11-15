@@ -1,0 +1,104 @@
+@font-face {
+    font-family: BrittanySignature;
+    src: url(BrittanySignature.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Playfair Display', serif;
+    color: #30281f;
+}
+a {
+    text-decoration: none;
+}
+.main{
+    height: 100%;
+    background-color: #303033;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    
+}
+.main .home-section{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 120px 1fr;
+    
+}
+.main .home-section .nav-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.main .home-section .nav-main .left-container{
+    display: flex;
+    list-style-type: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.main .home-section .nav-main .left-container li a{
+    font-size: 16px;
+    margin: 0 50px;
+    padding: 0px 10px;
+}
+
+.main .home-section .nav-main .menu-container{
+    display: flex;
+    align-items: center;  
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.main .home-section .nav-main .menu-container li a{
+    font-size: 16px;
+    margin: 0 50px;
+    padding: 0px 10px;
+    
+}
+/* Hero */
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: blur(2px);
+    
+}
+.content{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+    height: 500px;
+}
+.content h1{
+    font-family: BrittanySignature, cursive;
+    font-size: 100px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.intro-section{
+    
+}
