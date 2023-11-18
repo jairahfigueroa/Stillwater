@@ -2,6 +2,10 @@
     font-family: BrittanySignature;
     src: url(BrittanySignature.ttf);
 }
+@font-face {
+    font-family: DeriviaRegular;
+    src: url(Derivia-Regular.otf);
+}
 
 * {
     margin: 0;
@@ -9,14 +13,14 @@
 }
 * {
     font-family: 'Playfair Display', serif;
-    color: #30281f;
+    color: rgb(255, 255, 255);
 }
 a {
     text-decoration: none;
 }
 
 .main{
-    height: 200vh;
+    height: 400vh;
     background-color: #303033;
     display: grid;
     grid-template-columns: 1fr;
@@ -41,8 +45,8 @@ a {
 .main .home-section .nav-main .left-container{
     display: flex;
     list-style-type: none;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 249, 249);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -57,8 +61,8 @@ a {
     align-items: center;  
     padding: 0;
     list-style-type: none;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 253, 253);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -99,6 +103,9 @@ video{
     border-bottom: 1px solid white;
     padding-bottom: 10px;
 }
+
+/* SECOND SECTION */
+
 .intro-section{
     margin-left: 100px;
     margin-top: 100px;
@@ -117,6 +124,7 @@ video{
 }
 .intro-section-right{
     margin-left: 50px;
+    justify-content: center;
 }
 
 .intro-section-left h2{
@@ -125,6 +133,7 @@ video{
     -webkit-text-stroke: 1px #FFFFFF;
     font-size: 60px;
     position: relative;
+    font-weight: normal;
 }
 h2::before{
     content: "Our Story";
@@ -160,7 +169,7 @@ h2:hover::before{
 }
 .image1{
     object-fit: cover;
-    box-shadow: 16px 14px 20px black;
+    box-shadow: 16px 14px 18px black;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -172,7 +181,7 @@ h2:hover::before{
 }
 .image2{
     object-fit: cover;
-    box-shadow: 16px 14px 20px black;
+    box-shadow: 16px 14px 18px black;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -190,3 +199,36 @@ h2:hover::before{
     color: white;
     border: none;
 }
+
+/* THIRD SECTION */
+
+.portfolio-section{
+    height: 120vh;
+    background-color: #303033;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+}
+.portfolio-section-top{
+   
+}
+.portfolio-section-top p{
+    color: #FFFFFF;
+    font-family: DeriviaRegular, monospace;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 7px;
+    font-weight: normal;
+}
+.portfolio-section-film {
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+.portfolio-section-film .video2{
+    position: sticky;
+    height: 600px;
+}
+
+
