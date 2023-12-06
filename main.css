@@ -24,7 +24,11 @@ a {
 }
 
 .main{
+<<<<<<< HEAD
     height: 100%;
+=======
+    height: 400vh;
+>>>>>>> f0dd49cefb8684454aa2cedabc2596e680701de6
     background-color: #303033;
     display: grid;
     grid-template-columns: 1fr;
@@ -207,6 +211,10 @@ h2:hover::before{
 /* THIRD SECTION */
 
 .portfolio-section{
+<<<<<<< HEAD
+=======
+    height: 120vh;
+>>>>>>> f0dd49cefb8684454aa2cedabc2596e680701de6
     background-color: #303033;
     
 }
@@ -269,6 +277,7 @@ h2:hover::before{
     margin-top: 20px;
     letter-spacing: 4px;
 }
+<<<<<<< HEAD
 .slideshow-section{
     margin-left: 50px;
     margin-right: 50px;
@@ -292,5 +301,7 @@ h2:hover::before{
     font-size: 30px;
 }
 
+=======
+>>>>>>> f0dd49cefb8684454aa2cedabc2596e680701de6
 
 
