@@ -2,6 +2,14 @@
     font-family: BrittanySignature;
     src: url(BrittanySignature.ttf);
 }
+@font-face {
+    font-family: DeriviaRegular;
+    src: url(Derivia-Regular.otf);
+}
+@font-face {
+    font-family: ObjectivityMedium;
+    src: url(Objectivity-Medium.otf);
+}
 
 * {
     margin: 0;
@@ -9,20 +17,21 @@
 }
 * {
     font-family: 'Playfair Display', serif;
-    color: #30281f;
+    color: rgb(255, 255, 255);
 }
 a {
     text-decoration: none;
 }
 
 .main{
-    height: 200vh;
+    height: 100%;
     background-color: #303033;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 100vh) 1fr;
     
 }
+
 .main .home-section{
     height: 100%;
     background-position: center;
@@ -41,8 +50,8 @@ a {
 .main .home-section .nav-main .left-container{
     display: flex;
     list-style-type: none;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 249, 249);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -57,8 +66,8 @@ a {
     align-items: center;  
     padding: 0;
     list-style-type: none;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 253, 253);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -99,12 +108,14 @@ video{
     border-bottom: 1px solid white;
     padding-bottom: 10px;
 }
+
+/* SECOND SECTION */
+
 .intro-section{
     margin-left: 100px;
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 50px 2fr;
-    grid-template-rows: 1fr;
 }
 .intro-section-left{
 
@@ -116,7 +127,10 @@ video{
     
 }
 .intro-section-right{
-    margin-left: 50px;
+    margin-left: 30px;
+    justify-content: center;
+    height: 650px;
+    width: 800px;
 }
 
 .intro-section-left h2{
@@ -125,6 +139,7 @@ video{
     -webkit-text-stroke: 1px #FFFFFF;
     font-size: 60px;
     position: relative;
+    font-weight: normal;
 }
 h2::before{
     content: "Our Story";
@@ -160,22 +175,20 @@ h2:hover::before{
 }
 .image1{
     object-fit: cover;
-    box-shadow: 16px 14px 20px black;
-    border-radius: 10px;
+    box-shadow: 16px 14px 18px black;
     position: relative;
-    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 30px;
 }
 .image2{
     object-fit: cover;
-    z-index: 3;
-    margin-left: 50px;
-}
-.image2{
-    object-fit: cover;
-    box-shadow: 16px 14px 20px black;
-    border-radius: 10px;
-    position: relative;
+    box-shadow: 16px 14px 18px black;
+    position: absolute;
     overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 40px;
 }
 
 .intro-section-left button{
@@ -190,3 +203,94 @@ h2:hover::before{
     color: white;
     border: none;
 }
+
+/* THIRD SECTION */
+
+.portfolio-section{
+    background-color: #303033;
+    
+}
+.lines{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.lines::after, .lines::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 1px;
+    background: #fff;
+    width: 40%;
+    top: 25%;
+}
+.lines::after{
+    left: 0;
+}
+.lines::before{
+    right: 0;
+}
+.portfolio-section .circle p{
+    font-family: BrittanySignature, cursive;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+.portfolio-section-top{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-section-top h4{
+    color: #FFFFFF;
+    font-family: DeriviaRegular, monospace;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 7px;
+    font-weight: normal;
+    margin-top: 30px;
+}
+.portfolio-section-film {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 50px;
+}
+.portfolio-section-film .video2{
+    position: sticky;
+    height: 600px;
+}
+.view-more{
+    font-family: ObjectivityMedium, cursive;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 4px;
+}
+.slideshow-section{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.videoo{
+    position: sticky;
+    padding-block: 2rem;
+    border-radius: 25% 10%;
+    height: 75%;
+    width: 90%;
+    
+    
+}
+.slidetext{
+    font-family: BrittanySignature, cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
