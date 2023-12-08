@@ -24,16 +24,14 @@ a {
 }
 
 .main{
-<<<<<<< HEAD
     height: 100%;
-=======
-    height: 400vh;
->>>>>>> f0dd49cefb8684454aa2cedabc2596e680701de6
     background-color: #303033;
+    max-width: 150rem;
+    min-width: 500px;
     display: grid;
+    padding: 0 1em;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 100vh) 1fr;
-    
 }
 
 .main .home-section{
@@ -50,6 +48,7 @@ a {
     align-items: center;
     justify-content: center;
     z-index: 1;
+    
 }
 .main .home-section .nav-main .left-container{
     display: flex;
@@ -116,25 +115,30 @@ video{
 /* SECOND SECTION */
 
 .intro-section{
-    margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 25px;
     display: grid;
-    grid-template-columns: 1fr 50px 2fr;
+    gap: 1 rem;
+    grid-template-columns: 35% 2% 30% 30%;
 }
 .intro-section-left{
-
-
+    margin-top: 70px;
+    margin-left: 20px;
 }
 .intro-section-divider{
     height: 700px;
     border-left: 1px solid white;
-    
+    width: 50px
 }
 .intro-section-right{
-    margin-left: 30px;
     justify-content: center;
-    height: 650px;
-    width: 800px;
+    height: 100%;
+    width: 100%;
+}
+.intro-section-r{
+    margin-left: 10px;
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
 }
 
 .intro-section-left h2{
@@ -146,7 +150,7 @@ video{
     font-weight: normal;
 }
 h2::before{
-    content: "Our Story";
+    content: "The Filmmakers";
     position: absolute;
     width: 0%;
     height: 50%;
@@ -160,6 +164,7 @@ h2:hover::before{
 }
 
 .intro-section-left p{
+    font-family: Martel, cursive;
     color: #FFFFFF;
     padding-right: 100px;
     font-size: 20px;
@@ -167,10 +172,12 @@ h2:hover::before{
 }
 
 .intro-section-right h3{
+    margin-top: 50px;
     color: #FFFFFF;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .intro-section-right p{
     color: #FFFFFF;
     font-size: 18px;
@@ -180,19 +187,15 @@ h2:hover::before{
 .image1{
     object-fit: cover;
     box-shadow: 16px 14px 18px black;
-    position: relative;
     max-width: 100%;
     max-height: 100%;
     margin-top: 30px;
 }
 .image2{
-    object-fit: cover;
     box-shadow: 16px 14px 18px black;
-    position: absolute;
-    overflow: hidden;
+    object-fit: cover;
     max-width: 100%;
     max-height: 100%;
-    margin-left: 40px;
 }
 
 .intro-section-left button{
@@ -211,10 +214,6 @@ h2:hover::before{
 /* THIRD SECTION */
 
 .portfolio-section{
-<<<<<<< HEAD
-=======
-    height: 120vh;
->>>>>>> f0dd49cefb8684454aa2cedabc2596e680701de6
     background-color: #303033;
     
 }
@@ -277,31 +276,51 @@ h2:hover::before{
     margin-top: 20px;
     letter-spacing: 4px;
 }
-<<<<<<< HEAD
-.slideshow-section{
-    margin-left: 50px;
-    margin-right: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+
+/* FOURTH SECTION */
+
+.divider{
+    margin-bottom: 50px;
+}
+.center{
+
+}
+.center-image{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+h5{
+    font-family: DeriviaRegular, monospace;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-weight: normal;
 }
 
+/* FIFTH SECTION */
+
+.slideshow-section{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
 .videoo{
     position: sticky;
     padding-block: 2rem;
-    border-radius: 25% 10%;
+
+}
+.slideshow-video{
     height: 75%;
-    width: 90%;
-    
-    
+    width: 75%;
+    justify-self: center;
+    text-align: center;
 }
 .slidetext{
     font-family: BrittanySignature, cursive;
-    text-align: center;
     font-size: 30px;
 }
 
-=======
->>>>>>> f0dd49cefb8684454aa2cedabc2596e680701de6
 
 
