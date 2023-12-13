@@ -31,11 +31,11 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .main{
     height: 100%;
+    width: 100%;
     background-color: #303033;
-    max-width: 150rem;
-    min-width: 500px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 100vh) 1fr;
@@ -67,26 +67,10 @@ html{
 }
 .main .home-section .nav-main .left-container li a{
     font-size: 16px;
-    margin: 0 50px;
+    margin: 0 20px;
     padding: 0px 10px;
 }
 
-.main .home-section .nav-main .menu-container{
-    display: flex;
-    align-items: center;  
-    padding: 0;
-    list-style-type: none;
-    border-top: 1px solid rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(255, 253, 253);
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.main .home-section .nav-main .menu-container li a{
-    font-size: 16px;
-    margin: 0 50px;
-    padding: 0px 10px;
-    
-}
 /* Hero */
 video{
     position: absolute;
@@ -101,13 +85,11 @@ video{
     display: flex;
     position: absolute;
     align-items: center;
-    justify-content: center;
     bottom: 0;
-    right: 0;
-    left: 0;
-    margin: 0;
+    right: 25%;
+    top: 25%;
     z-index: 1;
-    height: 500px;
+    height: 100%;
 }
 .content h1{
     font-family: BrittanySignature, cursive;
@@ -132,9 +114,10 @@ video{
     margin-left: 40px;
 }
 .intro-section-divider{
+    margin-top: 70px;
     height: 700px;
     border-left: 1px solid white;
-    width: 50px
+    width: 50px;
 }
 .intro-section-right{
     justify-content: center;
@@ -193,21 +176,19 @@ h2:hover::before{
 }
 .image1{
     object-fit: cover;
-    box-shadow: 16px 14px 18px black;
+    box-shadow: 5px 5px 20px rgb(241, 241, 241);
     max-width: 100%;
     max-height: 100%;
     margin-top: 30px;
 }
 .image2{
-    box-shadow: 16px 14px 18px black;
+    box-shadow: 5px 5px 20px rgb(233, 232, 232);
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
 }
 
-.intro-section-left button{
-    width: 200px;
-    height: 60px;
+.intro-section-left .buttons{
     background-color: #766b87;
     text-transform: uppercase;
     line-height: 1em;
@@ -217,6 +198,8 @@ h2:hover::before{
     color: white;
     border: none;
     cursor: pointer;
+    padding: 20px 35px;
+    font-size: 13px;
 }
 
 /* THIRD SECTION */
@@ -292,6 +275,13 @@ h2:hover::before{
     margin-bottom: 50px;
     margin-top: 50px;
 }
+h5{
+    font-family: DeriviaRegular, monospace;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
 
 #testimonials{
    position: relative;
@@ -325,13 +315,7 @@ h2:hover::before{
     font-weight: normal;
     font-family: Martel, cursive;
 }
-h5{
-    font-family: DeriviaRegular, monospace;
-    text-align: center;
-    font-size: 80px;
-    letter-spacing: 5px;
-    font-weight: normal;
-}
+
 .banner-text2{
     position: absolute;
     top: 75%;
@@ -427,3 +411,237 @@ h5{
     font-size: 10px;
     font-family: ObjectivityMedium, cursive;
 }
+
+@media screen and (max-width: 767px) {
+
+    .main{
+        min-width: auto;
+        flex-direction: column;
+        width: 105%;
+        height: 100%;
+        grid-template-rows: repeat(2, 100vh) 1fr;
+    }
+
+    .content h1{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    .content{
+        left: 30%;
+        height: 75%;
+    }
+
+    .main .home-section .nav-main .left-container li a{
+        font-size: 5px;
+    }
+
+    .hero-main video{
+        width: 100%;
+        height: 88%;
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .intro-section-left{
+        margin: 0;
+        padding-left: 20px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    .intro-section-left h2{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    .intro-section-left .buttons{
+        font-size: 5px;
+        padding: 7px 18px;
+        position: relative;
+    }
+    .intro-section-left p{
+        font-size: 6px;
+    }
+    .intro-section-divider{
+    
+    }
+    .intro-section-right h3{
+        padding-left: 5px;
+        font-size: 5px;
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .intro-section-right p{
+        padding-left: 5px;
+        font-size: 6px;
+        padding-top: 20px;
+        display: none;
+       
+    }
+    .intro-section-divider{
+        display: none;
+    }
+    .intro-section-right{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 38%;
+    }
+    .intro-section-r{
+        margin: 0;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image1{
+       height: fit-content;
+       width: 100%;
+       box-shadow: 5px 3px 10px rgb(194, 192, 192);
+    }
+    .image2{
+       height: fit-content;
+       width: 100%;
+       box-shadow: 5px 3px 10px rgb(212, 211, 211);
+    }
+
+    .portfolio-section .circle p{
+        font-size: 3px;
+        letter-spacing: 2px;
+        padding-top: 8px;
+    }    
+    .lines{
+        margin-bottom: 0;
+    }
+    .portfolio-section-top h4{
+        font-size: 30px;
+    }
+    .portfolio-section-film {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 25px;
+        object-fit: cover;
+    }
+    .portfolio-section-film .video2{
+        height: 350px;
+    }
+    .view-more{
+        font-size: 8px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+    .divider{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    h5{
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    .banner-text{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .banner-text1{
+        margin-left: 30px;
+    }
+    .banner-text1 p{
+        font-size: 5px;
+    }
+    .banner-text2{
+        margin-left: 30px;
+        top: 72%;
+        right: 10%;
+    }
+    .banner-text2 .divider-button{
+        padding: 8px 13px;
+        font-size: 4px;
+    }
+    #films{
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+    .slideshow-video{
+        margin-top: 40px;
+        height: 55%;
+        width: 70%;
+        box-shadow: 8px 35px 20px rgb(197, 183, 183);
+    }
+    .slidetext{
+        font-size: 10px;
+    }
+    .text{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 6px;
+    }
+    .footer-section{
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    .social-icons a{
+        padding: 8px;
+        border: 1px solid white;
+        margin: 8px;
+        border-radius: 50%;
+    }
+    .social-icons a i{
+        font-size: 1.1em;
+        color: #cfcfdb;
+        opacity: 0.9;
+    }
+    .footer-bottom{
+        padding: 10px;
+    }
+    .footer-bottom p{
+        font-size: 5px;
+    }
+}
+
+
+/*
+@media (max-width: 1536px) {
+    .main {
+      max-width: 1280px;
+    }
+  }
+  
+ 
+  @media (max-width: 1280px) {
+    .main {
+      max-width: 1024px;
+    }
+  }
+  
+ 
+  @media (max-width: 1024px) {
+    .main {
+      max-width: 768px;
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .main {
+      max-width: 640px;
+    }
+  }
+  
+ 
+  @media (max-width: 640px) {
+    .main {
+      max-width: 475px;
+    }
+  }
+  
+ 
+  @media (max-width: 475px) {
+    .main {
+      width: 100%;
+    }
+  }
+*/

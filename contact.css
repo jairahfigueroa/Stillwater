@@ -122,16 +122,28 @@ body{
   .contact-section{
     flex-direction: column;
   }
+  .contact-info i{
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  .contact-info{
+    padding-left: 30px;
+    font-size: 15px;
+  }
 
   .contact-info .contact-form{
     margin: 30px 50px;
   }
   .contact-form h2{
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .contact-form{
+    margin-right: 25px;
+    margin-left: 10px;
   }
 
   .contact-form p{
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .contact-form .text-box{
